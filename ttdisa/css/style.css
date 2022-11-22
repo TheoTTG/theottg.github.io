@@ -6,17 +6,22 @@
     left: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
     padding: 0;
     margin: 0;
+    position: relative;
     /* height: 100vh; */
     /* display: flex; */
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
     overflow-x: hidden;
     background: rgba(218, 218, 218, 0.25);
-    font-family: 'Bank Gothic', sans-serif;
-	font-weight: 800;
+    font-family: 'Futura LT', sans-serif;
+	  font-weight: 800;
     /* max-width: 100%; */
 }
 
@@ -25,7 +30,7 @@ body {
     height: auto;
 }
 
-article {
+.center {
     text-align: center;
 }
 
@@ -58,8 +63,8 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: 70px;
-  padding-top: 35px;
+  /* margin-left: 25px; */
+  padding-top: 20px;
   position: relative;
 }
 
@@ -68,37 +73,72 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 17px;
-  font-family: 'Pricedown Bl', sans-serif;
+  font-family: 'Bank Gothic', sans-serif;
 }
 
 nav a:hover {
   color: #000;
 }
 
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: #444;
+.arrow{ 
+  width: 10%;
+  height: auto;
+  visibility: hidden;
+}
+/*FOOTER BEGIN */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
 
+footer {
+  background: #b6c1cf;
+  font-size: 18px;
+  padding: 35px;
+  text-align: center;
   position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
+  right: 0;
+  left: 0;
+  border: 1px solid #555;
+  bottom: 0;
 }
+/*FOOTER END */
 
-nav a:hover::before {
-  width: 100%;
-}
-/*NAV MENU END */
-
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;            /* Footer height */
-    color: black;
-    text-align: center;
-    border-top: 1px solid #555;
+  .bank {
+    font-family: 'Bank Gothic', sans-serif;
   }
+
+  .screenshot {
+    width: 25%;
+    height: auto;
+  }
+
+  .screenshot2 {
+    width: 35%;
+    height: auto;
+  }
+  
+  .screen1 {
+    text-align: center;
+  }
+
+  .socials {
+    width: 5%;
+    height: auto;
+  }
+
+  .socials2 {
+    width: 4%;
+    height: auto;
+  }
+
+  a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
